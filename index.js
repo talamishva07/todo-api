@@ -13,9 +13,9 @@ app.listen(2016, () => {
 
 app.use('/api', require('./curd/amm'));
 // require('./API/okkkk');
-app.post('/ok', (req, res) => {
-    res.send({ data: "send" });
-})
+app.use('/', (req, res) => {
+    return res.send("backend start")
+});
 
 
 // app.post('/users', async (req, res) => {
